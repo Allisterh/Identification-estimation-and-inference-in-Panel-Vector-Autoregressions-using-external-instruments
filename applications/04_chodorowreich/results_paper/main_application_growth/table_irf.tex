@@ -1,0 +1,22 @@
+\begin{table}[ht]\centering\footnotesize
+\resizebox{\textwidth}{!}{\begin{tabular}{llccccc}\toprule
+Specification & $p$ & $h=0$ & $h=4$ & $h=7$ & $h=12$ & $h=16$\\\midrule
+Baseline & 8 & 0.53 & 2.83 & 2.95 & 2.56 & 2.55\\
+ & & [-0.01, 1.20] & [1.55, 4.70] & [1.29, 5.51] & [0.46, 5.61] & [0.43, 5.53]\\[2pt]
+Baseline & 12 & 0.97 & 3.12 & 3.20 & 3.68 & 3.97\\
+ & & [0.31, 2.09] & [1.70, 5.52] & [1.07, 6.94] & [-0.03, 9.90] & [-1.18, 12.51]\\[2pt]
+Baseline & 16 (BIC) & 1.17 & 3.20 & 3.60 & 4.87 & 5.63\\
+ & & [0.49, 2.52] & [1.63, 5.85] & [1.23, 7.83] & [0.58, 12.41] & [-0.91, 16.82]\\[2pt]
+Unweighted & 8 & 0.42 & 2.89 & 2.59 & 1.93 & 2.05\\
+ & & [-0.32, 1.22] & [0.92, 5.41] & [0.57, 5.46] & [-0.03, 4.63] & [0.35, 4.37]\\[2pt]
+Fixed-dividend instrument & 8 & 0.70 & 2.68 & 2.45 & 1.82 & 1.87\\
+ & & [0.13, 1.43] & [1.28, 4.50] & [0.81, 4.68] & [0.09, 4.08] & [0.29, 3.91]\\[2pt]
+Within estimator, no correction & 8 & 0.55 & 2.84 & 2.83 & 2.30 & 2.33\\
+ & & [0.02, 1.17] & [1.59, 4.67] & [1.28, 5.21] & [0.54, 4.86] & [0.70, 4.68]\\[2pt]
+FOD-GMM & 8 & 0.42 & 2.41 & 2.21 & 1.76 & 1.79\\
+ & & [-0.15, 1.05] & [1.06, 4.06] & [0.46, 4.31] & [-0.22, 4.01] & [-0.04, 3.90]\\[2pt]
+\midrule Local projection IV & & 0.66 & 2.64 & 2.61 & 2.86 & 2.33\\
+ & & (0.28) & (0.70) & (0.95) & (1.09) & (1.10)\\
+\bottomrule\end{tabular}}
+\caption{Response of nontradable payroll, in basis points, to a stock-wealth shock equal to 1\% of annual labor income. PVAR-IV rows: point estimate and 95\% Anderson-Rubin set, two-way clustered by county and quarter; within estimator with half-panel jackknife correction unless the row states otherwise. Local projection IV: the estimator of the original study, with two-way clustered standard errors in parentheses.\label{tab:cns_irf}}
+\end{table}

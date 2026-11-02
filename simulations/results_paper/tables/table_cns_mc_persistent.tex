@@ -1,0 +1,18 @@
+\begin{table}[ht]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{\begin{tabular}{llr rrr rr rr}\toprule
+ & & & \multicolumn{3}{c}{Within estimator, coverage (\%)} & \multicolumn{2}{c}{Jackknife, coverage (\%)} & \multicolumn{2}{c}{Median bias}\\
+\cmidrule(lr){4-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+Design & $h$ & $F$ & AR, quarter & AR, two-way & Wald, two-way & AR, two-way & Wald, two-way & Within & Jackknife\\\midrule
+Persistent, $\rho_g=0.67$ & 0 & 35.2 & 92.4 & 92.8 & 92.8 & 93.2 & 93.8 & -0.01 & -0.03\\
+ & 4 &  & 93.2 & 94.0 & 91.6 & 94.0 & 92.0 & -0.10 & -0.00\\
+ & 7 &  & 93.2 & 93.6 & 92.0 & 93.2 & 92.2 & -0.21 & 0.10\\
+ & 12 &  & 92.6 & 93.0 & 91.6 & 94.2 & 92.8 & -0.26 & 0.09\\
+\addlinespace
+Persistent, $\rho_g=0.9$ & 0 & 10.8 & 88.8 & 89.8 & 93.6 & 91.8 & 95.4 & 0.06 & 0.04\\
+ & 4 &  & 92.0 & 92.4 & 93.6 & 93.0 & 94.2 & -0.08 & 0.06\\
+ & 7 &  & 91.8 & 92.4 & 92.6 & 93.2 & 94.0 & -0.15 & 0.06\\
+ & 12 &  & 91.6 & 92.2 & 91.2 & 93.2 & 93.2 & -0.28 & 0.05\\
+\addlinespace
+\bottomrule\end{tabular}}
+\caption{Coverage of nominal 95\% sets for the response of the outcome at horizon $h$ to a unit change in the policy variable, and median bias of the point estimate. $F$: median first-stage statistic, two-way clustered. AR: Anderson-Rubin set clustered by quarter or two-way. Wald: delta-method interval, two-way clustered. Within: within estimator of the PVAR coefficients. Jackknife: half-panel jackknife correction of the within estimator. Calibrated design with autocorrelation $\rho_g$ of the aggregate shift. 500 replications per design.\label{tab:mc_persistent}}
+\end{table}

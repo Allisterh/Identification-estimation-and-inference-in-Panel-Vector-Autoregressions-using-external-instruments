@@ -1,0 +1,12 @@
+\begin{table}[ht]\centering\footnotesize
+\begin{tabular}{r rrr rr rr}\toprule
+ & \multicolumn{3}{c}{AR coverage, two-way (\%)} & \multicolumn{2}{c}{Median length} & \multicolumn{2}{c}{Median bias}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+$h$ & Within & Jackknife & FOD-GMM & Jackknife & FOD-GMM & Jackknife & FOD-GMM\\\midrule
+0 & 95.4 & 95.4 & 95.4 & 2.25 & 2.33 & 0.01 & -0.00\\
+4 & 94.6 & 93.8 & 95.8 & 2.77 & 3.18 & 0.08 & 0.03\\
+7 & 92.4 & 92.0 & 96.8 & 3.67 & 4.35 & 0.09 & 0.01\\
+12 & 91.2 & 92.2 & 96.4 & 3.62 & 4.28 & 0.05 & -0.01\\
+\bottomrule\end{tabular}
+\caption{Calibrated design of Section 6: the within estimator without and with the half-panel jackknife correction, and GMM after forward orthogonal deviations with lagged levels as instruments. Coverage of nominal 95\% Anderson-Rubin sets clustered by county and quarter, median length of the sets, and median bias of the point estimate. 500 replications.\label{tab:mc_gmm}}
+\end{table}

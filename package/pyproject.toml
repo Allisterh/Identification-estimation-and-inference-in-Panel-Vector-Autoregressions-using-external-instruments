@@ -1,0 +1,8 @@
+[project]
+name = "pvariv"
+version = "0.7.0"
+description = "Panel VAR identified with an external instrument: within estimator with half-panel jackknife, FOD-GMM, Anderson-Rubin and CLR sets with two-way clustering"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "pandas", "matplotlib"]
+[tool.setuptools]
+packages = ["pvariv"]

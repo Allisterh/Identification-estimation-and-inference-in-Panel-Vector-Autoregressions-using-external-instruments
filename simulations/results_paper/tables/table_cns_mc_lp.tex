@@ -1,0 +1,23 @@
+\begin{table}[ht]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{\begin{tabular}{llr rrr rrr rr rr}\toprule
+ & & & \multicolumn{3}{c}{Median bias} & \multicolumn{3}{c}{Median abs.\ error} & \multicolumn{2}{c}{AR coverage (\%)} & \multicolumn{2}{c}{Median AR length}\\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}
+Design & $h$ & $F$ & PVAR & LP & LP-J & PVAR & LP & LP-J & PVAR & LP & PVAR & LP\\\midrule
+Calibrated & 0 & 95.1 & 0.01 & 0.01 & 0.04 & 0.38 & 0.38 & 0.40 & 95.4 & 95.4 & 2.25 & 2.24\\
+ & 4 &  & 0.08 & -0.23 & 0.01 & 0.50 & 1.02 & 1.02 & 93.8 & 88.6 & 2.77 & 5.23\\
+ & 7 &  & 0.09 & -0.45 & -0.24 & 0.72 & 1.46 & 1.62 & 92.0 & 87.4 & 3.67 & 7.04\\
+ & 12 &  & 0.05 & -0.83 & -0.40 & 0.67 & 1.81 & 2.32 & 92.2 & 86.8 & 3.62 & 8.54\\
+\addlinespace
+Persistent, $\rho_g=0.9$ & 0 & 17.3 & 0.04 & 0.06 & 0.02 & 0.74 & 0.77 & 0.93 & 91.8 & 89.8 & 5.48 & 4.87\\
+ & 4 &  & 0.06 & -0.43 & -0.36 & 0.68 & 3.31 & 3.95 & 93.0 & 77.6 & 4.89 & 14.38\\
+ & 7 &  & 0.06 & -1.84 & -1.05 & 0.93 & 5.16 & 6.06 & 93.2 & 68.8 & 6.28 & 20.69\\
+ & 12 &  & 0.05 & -3.25 & -2.17 & 0.86 & 6.92 & 9.10 & 93.2 & 64.6 & 6.16 & 27.88\\
+\addlinespace
+Anticipated, $a=1$ & 0 & 29.8 & -0.00 & 0.00 & 0.07 & 0.54 & 0.53 & 0.59 & 93.2 & 93.0 & 3.43 & 3.40\\
+ & 4 &  & -0.04 & 2.43 & 2.56 & 0.55 & 2.61 & 2.71 & 93.6 & 69.8 & 3.42 & 8.88\\
+ & 7 &  & -0.03 & 2.20 & 2.60 & 0.72 & 2.84 & 3.11 & 94.4 & 75.8 & 4.40 & 11.76\\
+ & 12 &  & -0.03 & 0.79 & 1.41 & 0.77 & 3.23 & 4.20 & 93.2 & 82.2 & 4.36 & 13.88\\
+\addlinespace
+\bottomrule\end{tabular}}
+\caption{PVAR-IV and local projection IV of the cumulated response at horizon $h$, on the same simulated panels. PVAR: within estimator with the half-panel jackknife correction. LP: change of the level of the outcome from $t-1$ to $t+h$ regressed on the policy instrumented by $Z_{it}$, with $p$ lags of both variables as controls and county and quarter effects. LP-J: the same with the split-panel jackknife correction. Anticipated: the instrument also carries the next innovation of the aggregate shift, with loading $a$. Sets: nominal 95\% Anderson-Rubin sets with two-way clustering. Median absolute error: median of the absolute deviation of the estimate from the true response. $F$: median first-stage statistic of the local projection, two-way clustered. 500 replications per design.\label{tab:mc_lp}}
+\end{table}

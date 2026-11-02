@@ -1,0 +1,32 @@
+\begin{table}[ht]\centering\footnotesize
+\begin{tabular}{llr rrr}\toprule
+ & & & \multicolumn{3}{c}{AR coverage, within estimator (\%)}\\ \cmidrule(lr){4-6}
+Design & $h$ & $F$ & county & quarter & two-way\\\midrule
+Calibrated & 0 & 78.1 & 72.2 & 95.2 & 95.4\\
+ & 4 &  & 71.4 & 94.0 & 94.6\\
+ & 7 &  & 68.8 & 91.6 & 92.4\\
+ & 12 &  & 62.0 & 90.0 & 91.2\\
+\addlinespace
+Weak, $c=0.4$ & 0 & 13.6 & 4.6 & 94.0 & 94.2\\
+ & 4 &  & 4.8 & 92.8 & 93.4\\
+ & 7 &  & 8.2 & 93.8 & 94.0\\
+ & 12 &  & 6.2 & 94.8 & 95.2\\
+\addlinespace
+Weak, $c=0.2$ & 0 & 3.6 & 4.0 & 92.6 & 93.0\\
+ & 4 &  & 5.4 & 94.8 & 95.4\\
+ & 7 &  & 5.8 & 94.8 & 95.0\\
+ & 12 &  & 6.6 & 94.2 & 94.6\\
+\addlinespace
+Persistent, $\rho_g=0.67$ & 0 & 35.2 & 71.8 & 92.4 & 92.8\\
+ & 4 &  & 71.2 & 93.2 & 94.0\\
+ & 7 &  & 71.2 & 93.2 & 93.6\\
+ & 12 &  & 64.8 & 92.6 & 93.0\\
+\addlinespace
+Persistent, $\rho_g=0.9$ & 0 & 10.8 & 70.0 & 88.8 & 89.8\\
+ & 4 &  & 69.4 & 92.0 & 92.4\\
+ & 7 &  & 63.8 & 91.8 & 92.4\\
+ & 12 &  & 62.8 & 91.6 & 92.2\\
+\addlinespace
+\bottomrule\end{tabular}
+\caption{Coverage of nominal 95\% Anderson-Rubin sets for the cumulated response, within estimator, with the covariance clustered by county alone, by quarter, and in both dimensions, for the designs of Section 6. $F$: median first-stage statistic, two-way clustered. 500 replications per design.\label{tab:mc_county}}
+\end{table}

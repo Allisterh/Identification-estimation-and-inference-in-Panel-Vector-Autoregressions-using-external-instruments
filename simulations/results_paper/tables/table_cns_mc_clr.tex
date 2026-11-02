@@ -1,0 +1,18 @@
+\begin{table}[ht]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llr rrr rrr}\toprule
+ & & & \multicolumn{3}{c}{Coverage (\%)} & \multicolumn{3}{c}{Rejection of zero (\%)}\\
+\cmidrule(lr){4-6}\cmidrule(lr){7-9}
+Design & $h$ & $F$ & AR, $k=1$ & AR, $k=4$ & CLR, $k=4$ & AR, $k=1$ & AR, $k=4$ & CLR, $k=4$\\\midrule
+Calibrated, $k=4$ & 0 & 24.5 & 94.6 & 93.8 & 95.6 & 15.2 & 11.2 & 13.8\\
+ & 4 &  & 95.0 & 94.4 & 97.2 & 98.2 & 87.4 & 93.0\\
+ & 7 &  & 94.8 & 95.2 & 96.8 & 78.2 & 47.6 & 61.8\\
+ & 12 &  & 94.8 & 94.2 & 96.6 & 52.0 & 20.2 & 31.4\\
+\addlinespace
+Weak, $c=0.4$, $k=4$ & 0 & 4.8 & 93.4 & 94.4 & 96.4 & 6.6 & 6.4 & 5.0\\
+ & 4 &  & 94.6 & 96.0 & 97.4 & 53.0 & 27.6 & 33.8\\
+ & 7 &  & 93.8 & 95.4 & 97.0 & 31.4 & 15.2 & 18.4\\
+ & 12 &  & 94.0 & 95.4 & 97.8 & 22.4 & 10.4 & 10.4\\
+\addlinespace
+\bottomrule\end{tabular}
+\caption{Several instruments: the shift-share instrument and the exposure times the shift lagged one to three quarters ($k=4$). Coverage of nominal 95\% sets for the cumulated response at horizon $h$, and rejection rates of the null that the response is zero. AR, $k=4$, and CLR, $k=4$: Anderson-Rubin and conditional likelihood ratio tests with all instruments; AR, $k=1$: Anderson-Rubin test with the relevant instrument alone. Within estimator with the half-panel jackknife correction, two-way clustering. $F$: median first-stage statistic with all instruments, two-way clustered. 500 replications per design.\label{tab:mc_clr}}
+\end{table}
